@@ -1,0 +1,25 @@
+#chatContainer{
+	width: 400px;
+	height: 350px;
+	background: black;
+	position: relative;
+}
+
+#form_textArea{
+	position: absolute;
+  	bottom: 10px;
+  	left: 2px;
+}
+
+#chatEntries{
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top:2px;
+	left:2px;
+	color: white;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid white;
+}

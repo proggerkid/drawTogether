@@ -1,0 +1,16 @@
+var express = require('express');
+var app = express();
+var httpServer = require('http').Server(app);
+var router = require('./router.js');
+var io = require('socket.io')(httpServer);
+
+app.set('views', '../views');
+app.set('view engine', 'ejs');
+
+app.use('/', router);
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+});
+
+httpServer.listen(8000);
